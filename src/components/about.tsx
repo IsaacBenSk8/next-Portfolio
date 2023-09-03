@@ -6,7 +6,7 @@ export default function About() {
     <Reveal>
     <div id="aboutSection" className="flex flex-col items-end max-w-4xl space-y-8 py-44 w-fit">
       <Reveal>
-      <h2 className="text-cyan-400 text-6xl">ABOUT</h2>
+      <h2 className="text-cyan-400 text-6xl"><span className="hover:after:content-['ME_<3']">ABOUT </span></h2>
       </Reveal> 
       <Reveal>
       <section className="flex items-center  dark:bg-black/10">

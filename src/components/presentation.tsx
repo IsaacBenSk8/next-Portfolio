@@ -1,26 +1,26 @@
 import Image from "next/image"
 import profile from "@/img/profile_1.png"
 import download from "@/img/download_3.svg"
-import github from "@/img/github_1.svg"
-import linkedin from "@/img/linkedin_1.svg"
-import email from "@/img/email_4.svg"
+import github from "@/img/github_2.svg"
+import linkedin from "@/img/linkedin_2.svg"
+import email from "@/img/mail_1.svg"
 import Link from "next/link"
 import Reveal from "./reveal"
+import TextType from "./text-type"
 
 export default function Presentation() {
   return (
-    <section className="flex justify-evenly items-center py-24 space-x-44">
+    <section className="flex justify-evenly items-center py-24 space-x-36">
       <div className="space-y-8">
-        
-        <div>
+        <div className="presentation">
           <Reveal>
           <h3 className="px-1">Hi! I&apos;m</h3>
           </Reveal>
           <Reveal>
-          <h1 className="text-6xl">Isaac FC</h1>
+          <h1 className="text-6xl">Isaac <span className="detail">FC</span></h1>
           </Reveal>
           <Reveal>
-          <h1 className="text-6xl text-emerald-400">Full Stack Developer</h1>
+          <TextType />
           </Reveal>
         </div>
         <Reveal>
@@ -48,8 +48,9 @@ export default function Presentation() {
               <Image 
               src={linkedin}
               alt="LinkedIn"
-              width={60}
-              height={60}
+              width={57}
+              height={57}
+              className="hover:blur"
               />
               </Link>
             </Reveal>
@@ -62,6 +63,7 @@ export default function Presentation() {
               alt="GitHub"
               width={60}
               height={60}
+              className="hover:blur"
               />
               </Link>
             </Reveal>
@@ -73,7 +75,7 @@ export default function Presentation() {
               alt="Email"
               width={60}
               height={60}
-              className=""
+              className="hover:blur"
               />
               </Link>
             </Reveal>

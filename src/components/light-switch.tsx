@@ -34,7 +34,7 @@ export default function LightSwitch() {
     <button
     aria-label="Toggle Dark Mode"
     type="button"
-    className="w-fit h-fit mx-28"
+    className="w-fit h-fit mx-32"
     onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
       <Reveal>
         {theme === 'light' ?

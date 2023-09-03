@@ -31,3 +31,17 @@ body {
 .balance {
   white-space: pre balance;
 }
+
+.presentation {
+  width: 41rem;
+}
+
+.detail:hover::after {
+  content: 'Not a Futbol Club lol';
+  position: relative;
+  display: inline-flex;
+  top: -40px;
+  font-size: small;
+  font-weight: 200;
+  
+}
