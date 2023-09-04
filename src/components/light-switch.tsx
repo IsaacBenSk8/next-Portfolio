@@ -16,16 +16,18 @@ export default function LightSwitch() {
   }, [])
 
   if (!mounted) {
-    return <button 
-    className="w-10 h-10"
-    >
-      <Image
+    return <Reveal>
+      <button 
+      className="w-10 h-10">
+              <Image
               src={sun}
               alt="Light"
-              className="object-contain"
+              className="scale-0"
               priority={true}
               />
-          </button>
+      </button>
+      </Reveal>
+      
   }
   return (
     <button
