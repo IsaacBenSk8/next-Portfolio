@@ -18,14 +18,13 @@ export default function LightSwitch() {
   if (!mounted) {
     return <button 
     className="w-10 h-10"
-    ><Reveal>
+    >
       <Image
               src={sun}
               alt="Light"
               className="object-contain"
               priority={true}
               />
-    </Reveal>   
           </button>
   }
   return (
@@ -34,7 +33,6 @@ export default function LightSwitch() {
     type="button"
     className="w-10 h-10"
     onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
-      <Reveal>
         {theme === 'light' ?
         <Image
         src={sun}
@@ -49,8 +47,6 @@ export default function LightSwitch() {
         priority={true}
         />
       }
-      </Reveal>
-      
     </button>
   )
 }
