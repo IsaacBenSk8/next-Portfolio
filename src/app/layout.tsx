@@ -3,7 +3,6 @@ import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import Providers from './providers'
 import Header from '@/components/header'
-import { useTheme } from 'next-themes'
 
 const poppins = Poppins({weight: ['100', '200', '300', '400', '500', '600', '700', '800' ,'900'], subsets: ['latin'] }, )
 
@@ -18,10 +17,11 @@ export default function RootLayout({children}: {
 
   return (
     <html
-    className=""
+    className="light"
     translate='no'
     lang="en"
-    >
+    style={{colorScheme: 'light'}}
+    suppressHydrationWarning>
       
       <body 
       id="homeSection" 

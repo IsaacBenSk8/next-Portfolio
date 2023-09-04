@@ -9,45 +9,63 @@ import Link from "next/link";
 
 export default function MobilePresentation() {
   return (
-    <main className="xsm:w-[20rem] xsm:h-[38rem] flex flex-col items-center border border-black">
+    <main className="xsm:w-[20rem] xsm:h-fit flex flex-col items-center">
       <Image
       src={profile}
       alt="Perfil"
-      className="xsm:w-[16rem] xsm:h-[16rem] xsm:my-6 border border-black"/>
-      <section className="flex xsm:flex-col w-[20rem] items-center border border-black">
+      className="xsm:w-[16rem] xsm:h-[16rem] xsm:my-6"/>
+      <section className="flex xsm:flex-col w-[20rem] items-center">
         <h3>Hi I&apos;m</h3>
         <h1 className="xsm:text-4xl">Isaac FC</h1>
         <TextType />
       </section>
-      <section className="xsm:w-[20rem] xsm:h-[8rem] xsm:my-6 border border-black">
-        <button className="flex flex-row">
-          <h3 className="text-xl">CV</h3>
-          <Image
-          src={download}
-          alt="Download"
-          />
-        </button>
-        <div className="flex flex-row border border-black">
-          <div className="xsm:w-[2rem] xsm:h-[2rem] border border-black">
+      <section className="xsm:w-[20rem] xsm:h-[8rem] xsm:my-6 flex flex-col items-center space-y-6">
+          <Link
+          href="/2023_01_isaac_flores_carbajal_resume.pdf"
+          target="_blank"
+          className="flex flex-row rounded-full xsm:py-2 xsm:px-4 space-x-2 border border-gray-600/40 dark:border-indigo-400/80 bg-white/20 dark:bg-slate-500/10">
+            <h3 className="xsm:text-xl font-semibold">CV</h3>
             <Image
-            src={linkedin}
-            alt="LinkedIn"
-            className="object-contain"
+            src={download}
+            alt="Download"
             />
+          </Link>
+        <div className="flex flex-row xsm:space-x-6">
+          <div className="xsm:w-[2rem] xsm:h-[2rem] flex justify-center">
+            <Link
+            href="https://www.linkedin.com/in/isaac-flores-0ab8a6169/"
+            target="_blank">
+              <Image
+              src={linkedin}
+              alt="LinkedIn"
+              width={32}
+              height={32}
+              />
+            </Link>
           </div>
-          <div className="xsm:w-[2rem] xsm:h-[2rem] border border-black">
-            <Image
-            src={github}
-            alt="Github"
-            className="object-contain"
-            />
+          <div className="xsm:w-[2rem] xsm:h-[2rem]">
+            <Link
+            href="https://github.com/IsaacBenSk8"
+            target="_blank">
+              <Image
+              src={github}
+              alt="Github"
+              width={32}
+              height={32}
+              />
+            </Link>
           </div>
-          <div className="xsm:w-[2rem] xsm:h-[2rem] border border-black">
-            <Image
-            src={email}
-            alt="Email"
-            className="object-contain"
-            />
+          <div className="xsm:w-[2rem] xsm:h-[2rem]">
+            <Link
+            href="mailto:isaacflores590@gmail.com"
+            target="_blank">
+              <Image
+              src={email}
+              alt="Email"
+              width={32}
+              height={32}
+              />
+            </Link>
           </div>
         </div>
       </section>
