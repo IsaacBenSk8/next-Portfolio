@@ -5,7 +5,7 @@ import { Typewriter } from "react-simple-typewriter"
 
 export default function TextType() {
   return (
-      <div className="text-6xl text-emerald-400">
+      <div className="xsm:text-4xl xsm:text-center xsm:w-[16.5rem] xsm:h-[5rem] text-emerald-400">
         <Typewriter 
           words={['Full Stack Developer', 'Codeoholic', 'Gamer', 'Achievement Hunter', 'Full Stack Developer']}
           loop={1}

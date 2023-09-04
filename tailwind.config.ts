@@ -10,8 +10,17 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'lights' : "url('/img/backgroundv4.svg')",
+        'lights' : "url('/img/bgv8.svg')",
+        'phone' : "url('/img/bg-phone.svg')",
       },
+      screens: {
+        'xsm': '320px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      }
     },
   },
   plugins: [],

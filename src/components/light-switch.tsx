@@ -17,14 +17,12 @@ export default function LightSwitch() {
 
   if (!mounted) {
     return <button 
-    className="w-fit h-fit mx-28"
+    className="w-10 h-10"
     ><Reveal>
       <Image
               src={sun}
               alt="Light"
-              width={38}
-              height={38}
-              className="scale-0"
+              className="object-contain"
               priority={true}
               />
     </Reveal>   
@@ -32,25 +30,22 @@ export default function LightSwitch() {
   }
   return (
     <button
-    aria-label="Toggle Dark Mode"
+    aria-label={theme === 'light' ? 'Toggle Dark Mode' : 'Toggle Light Mode'}
     type="button"
-    className="w-fit h-fit mx-32"
+    className="w-10 h-10 border border-black"
     onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
       <Reveal>
         {theme === 'light' ?
         <Image
         src={sun}
         alt="Light"
-        width={38}
-        height={38}
-        className=""
+        className="object-contain"
         priority={true}
         /> :
         <Image 
         src={moon}
         alt="Dark"
-        width={38}
-        className=""
+        className="object-contain"
         priority={true}
         />
       }
