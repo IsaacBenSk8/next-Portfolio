@@ -1,5 +1,3 @@
-'use client'
-
 import './globals.css'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
@@ -18,14 +16,12 @@ export default function RootLayout({children}: {
   children: React.ReactNode,
 }) {
 
-  const {theme, setTheme} = useTheme();
-
   return (
     <html
-    className={theme === 'light' ? 'light' : 'dark'}
+    className=""
     translate='no'
     lang="en"
-    style={theme === 'light' ? {colorScheme: 'light'} : {colorScheme: 'dark'}}>
+    >
       
       <body 
       id="homeSection" 
