@@ -6,7 +6,7 @@ import Reveal from './reveal';
 export default function MobileHeader() {
 
   return (
-    <header className='anima z-[2] flex flex-row items-center xsm:w-full justify-center space-x-20 py-4'>
+    <header className='anima z-[2] flex flex-row items-center justify-center xsm:w-full  xsm:space-x-32 py-4'>
       <Reveal>
         <h1 className='relative xsm:text-4xl w-fit h-fit font-semibold'>if(C)</h1>
       </Reveal>
