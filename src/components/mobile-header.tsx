@@ -12,13 +12,13 @@ export default function MobileHeader() {
       </Reveal>
       <Reveal>
         <div className='flex flex-row items-center space-x-4'>
+          <LightSwitch />
           <button className='w-10 h-10'>
             <Image
             src={bar}
             alt='Barra'
             className='object-contain'/>
           </button>
-          <LightSwitch />
         </div>
       </Reveal>
     </header>
