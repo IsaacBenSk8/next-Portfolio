@@ -49,3 +49,17 @@ body {
   font-weight: 200;
   
 }
+
+.anima {
+  position: sticky;
+  top: 0;
+  animation: adjust-header linear both;
+  animation-timeline: scroll();
+  animation-range: 0 4rem;
+}
+
+@keyframes adjust-header {
+  to {
+    @apply bg-white/20 dark:bg-slate-500/10 backdrop-blur;
+  }
+}

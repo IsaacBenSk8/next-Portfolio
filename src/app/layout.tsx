@@ -26,7 +26,7 @@ export default function RootLayout({children}: {
       <body 
       id="homeSection" 
       className={`${poppins.className} flex flex-col items-center bg-top bg-no-repeat text-gray-900 dark:text-white bg-slate-200 2xl:bg-lights dark:bg-zinc-900 
-      xsm:bg-phone`}>
+      xsm:bg-phone relative`}>
         <Providers>
           {children}
         </Providers>
