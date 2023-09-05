@@ -10,7 +10,7 @@ import Reveal from "./reveal";
 
 export default function MobilePresentation() {
   return (
-    <main className="xsm:w-[20rem] xsm:h-fit flex flex-col items-center">
+    <main className="xsm:w-[20rem] xsm:h-fit flex flex-col items-center xsm:mb-10">
       <Reveal>
         <Image
         src={profile}
