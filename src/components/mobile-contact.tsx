@@ -45,17 +45,17 @@ export default function MobileContact() {
         onSubmit={handleSubmit}>
           <label htmlFor="name">
             <input
-            className="rounded-full bg-transparent border border-gray-600/40 dark:border-indigo-400/80 py-2 px-6 dark:bg-black/10 placeholder:text-center inputsize xsm:text-xs xsm:w-[16rem] xsm:h-[2rem]"
+            className="rounded-full bg-transparent border border-gray-600/40 dark:border-indigo-400/80 py-2 px-6 dark:bg-black/10 text-center placeholder:text-center inputsize xsm:text-xs xsm:w-[16rem] xsm:h-[2rem]"
             type="text" name="name" id="name" placeholder="Your Name" required/>
           </label>
           <label htmlFor="email">
             <input
-            className="rounded-full bg-transparent border border-gray-600/40 dark:border-indigo-400/80 py-2 px-6 dark:bg-black/10 placeholder:text-center inputsize xsm:text-xs xsm:w-[16rem] xsm:h-[2rem]" 
+            className="rounded-full bg-transparent border border-gray-600/40 dark:border-indigo-400/80 py-2 px-6 dark:bg-black/10 text-center placeholder:text-center inputsize xsm:text-xs xsm:w-[16rem] xsm:h-[2rem]" 
             type="email" name="email" id="email" placeholder="someone@example.com" required/>
           </label>
           <label htmlFor="message">           
             <textarea
-            className="roundedlevel resize-none bg-transparent border border-gray-600/40 dark:border-indigo-400/80 py-2 px-6 dark:bg-black/10 placeholder:text-center inputsize xsm:text-xs xsm:w-[16rem] xsm:h-[8rem]"
+            className="roundedlevel resize-none bg-transparent border border-gray-600/40 dark:border-indigo-400/80 py-2 px-6 dark:bg-black/10 text-center placeholder:text-center inputsize xsm:text-xs xsm:w-[16rem] xsm:h-[8rem]"
             rows={8} cols={80} 
             id="message" 
             name="message" 
