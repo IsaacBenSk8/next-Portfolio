@@ -22,7 +22,7 @@ export default function GridPics() {
       <div>
         <div className="w-full grid gap-10 grid-cols-3 grid-rows-4">
           <Reveal>
-            <div className="relative cursor-pointer icon">
+            <div className="relative icon">
               <p className="absolute tooltip top-0 opacity-0 left-3 pointer-events-none bg-slate-500/10 backdrop-blur xsm:text-[0.6rem] xsm:px-[0.5rem] xsm:py-[0.25rem] rounded-full">HTML</p>
               <Image 
               src={html}
@@ -32,7 +32,7 @@ export default function GridPics() {
             </div>
           </Reveal>
           <Reveal>
-            <div className="relative cursor-pointer icon">
+            <div className="relative icon">
               <p className="absolute tooltip top-0 opacity-0 pointer-events-none left-[0.85rem] bg-slate-500/10 backdrop-blur xsm:text-[0.6rem] xsm:px-[0.5rem] xsm:py-[0.25rem] rounded-full">CSS</p>
               <Image 
               src={css}
@@ -42,7 +42,7 @@ export default function GridPics() {
             </div>
           </Reveal>
           <Reveal>
-            <div className="relative cursor-pointer icon">
+            <div className="relative icon">
               <p className="absolute tooltip top-0 opacity-0 pointer-events-none bg-slate-500/10 backdrop-blur xsm:text-[0.55rem] xsm:px-[0.5rem] xsm:py-[0.25rem] rounded-full">Javascript</p>
               <Image 
               src={js}
@@ -52,7 +52,7 @@ export default function GridPics() {
             </div>
           </Reveal>
           <Reveal>
-            <div className="relative cursor-pointer icon">
+            <div className="relative icon">
               <p className="absolute tooltip top-0 opacity-0 pointer-events-none bg-slate-500/10 backdrop-blur xsm:text-[0.6rem] xsm:px-[0.5rem] xsm:py-[0.25rem] rounded-full">Typescript</p>
               <Image 
               src={typescript}
@@ -62,7 +62,7 @@ export default function GridPics() {
             </div>
           </Reveal>
           <Reveal>
-            <div className="relative cursor-pointer icon">
+            <div className="relative icon">
               <p className="absolute tooltip top-0 opacity-0 pointer-events-none left-3 bg-slate-500/10 backdrop-blur xsm:text-[0.6rem] xsm:px-[0.5rem] xsm:py-[0.25rem] rounded-full">NPM</p>
               <Image 
               src={npm}
@@ -72,7 +72,7 @@ export default function GridPics() {
             </div>
           </Reveal>
           <Reveal>
-            <div className="relative cursor-pointer icon">
+            <div className="relative icon">
               <p className="absolute tooltip top-0 opacity-0 pointer-events-none left-[0.85rem] bg-slate-500/10 backdrop-blur xsm:text-[0.6rem] xsm:px-[0.5rem] xsm:py-[0.25rem] rounded-full">Jest</p>
               <Image 
               src={jest}
@@ -82,7 +82,7 @@ export default function GridPics() {
             </div>
           </Reveal>
           <Reveal>
-            <div className="relative cursor-pointer icon">
+            <div className="relative icon">
               <p className="absolute tooltip top-0 opacity-0 pointer-events-none left-[0.65rem] bg-slate-500/10 backdrop-blur xsm:text-[0.6rem] xsm:px-[0.5rem] xsm:py-[0.25rem] rounded-full">React</p>
               <Image 
               src={react}
@@ -92,7 +92,7 @@ export default function GridPics() {
             </div>
           </Reveal>
           <Reveal>
-            <div className="relative cursor-pointer icon">
+            <div className="relative icon">
               <p className="absolute tooltip top-0 opacity-0 pointer-events-none bg-slate-500/10 backdrop-blur xsm:text-[0.5rem] xsm:px-[0.5rem] xsm:py-[0.25rem] rounded-full">TailwindCSS</p>
               <Image 
               src={tailwind}
@@ -102,7 +102,7 @@ export default function GridPics() {
             </div>
           </Reveal>
           <Reveal>
-            <div className="relative cursor-pointer icon">
+            <div className="relative icon">
               <p className="absolute tooltip top-0 opacity-0 pointer-events-none left-[1.05rem] bg-slate-500/10 backdrop-blur xsm:text-[0.6rem] xsm:px-[0.5rem] xsm:py-[0.25rem] rounded-full">Git</p>
               <Image 
               src={git}
@@ -112,7 +112,7 @@ export default function GridPics() {
             </div>
           </Reveal>
           <Reveal>
-            <div className="relative cursor-pointer icon">
+            <div className="relative icon">
               <p className="absolute tooltip top-0 opacity-0 pointer-events-none left-[0.30rem] bg-slate-500/10 backdrop-blur xsm:text-[0.6rem] xsm:px-[0.5rem] xsm:py-[0.25rem] rounded-full">NodeJS</p>
               <Image 
               src={node}
@@ -122,7 +122,7 @@ export default function GridPics() {
             </div>
           </Reveal>
           <Reveal>
-            <div className="relative cursor-pointer icon">
+            <div className="relative icon">
               <p className="absolute tooltip top-0 opacity-0 pointer-events-none bg-slate-500/10 backdrop-blur xsm:text-[0.5rem] xsm:px-[0.5rem] xsm:py-[0.25rem] rounded-full">PostgreSQL</p>
               <Image 
               src={postgre}
@@ -132,7 +132,7 @@ export default function GridPics() {
             </div>
           </Reveal>
           <Reveal>
-            <div className="relative cursor-pointer icon">
+            <div className="relative icon">
               <p className="absolute tooltip top-0 opacity-0 pointer-events-none bg-slate-500/10 backdrop-blur xsm:text-[0.6rem] xsm:px-[0.5rem] xsm:py-[0.25rem] rounded-full">MongoDB</p>
               <Image 
               src={mongo}
