@@ -12,7 +12,7 @@ export default function MobileHeader() {
         <Link 
         href="#homeSection"
         scroll={true}>
-          <h1 className='select-none xsm:text-4xl w-fit h-fit font-semibold'>if(C)</h1>
+          <h1 className='select-none xsm:text-3xl w-fit h-fit font-semibold'>if(C)</h1>
         </Link>
       </Reveal>
       <Reveal>
