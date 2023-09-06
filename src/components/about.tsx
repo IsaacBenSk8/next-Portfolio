@@ -32,9 +32,6 @@ export default function About() {
           </p>
           </Reveal>
         </div>
-        {/* <div className="flex flex-wrap items-center overflow-hidden border-t border-r border-b rounded-details border-gray-600/40 dark:border-indigo-400/80 w-48 h-48">
-          <SliderPics />
-        </div> */}
       </section>
       </Reveal> 
     </div> 

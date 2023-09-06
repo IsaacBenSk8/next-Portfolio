@@ -20,90 +20,126 @@ export default function GridPics() {
         <h3 className="w-full xsm:text-4xl font-medium text-amber-400">SKILLS</h3>
       </Reveal>
       <div>
-        <div className="grid gap-6 grid-cols-4 grid-rows-3">
+        <div className="grid gap-4 grid-cols-3 grid-rows-4">
           <Reveal>
-            <Image 
-            src={html}
-            alt="HTML"
-            className="h-16 w-16"
-            />
+            <div className="relative z-[2] cursor-pointer icon">
+              <p className="absolute tooltip top-0 opacity-0 left-3 pointer-events-none bg-slate-500/10 backdrop-blur xsm:text-[0.6rem] xsm:px-[0.5rem] xsm:py-[0.25rem] rounded-full">HTML</p>
+              <Image 
+              src={html}
+              alt="HTML"
+              className="h-16 w-16 z-[2]"
+              />
+            </div>
           </Reveal>
           <Reveal>
-            <Image 
-            src={css}
-            alt="CSS"
-            className="h-16 w-16"
-            />
+            <div className="relative z-[2] cursor-pointer icon">
+              <p className="absolute tooltip top-0 opacity-0 pointer-events-none left-[0.85rem] bg-slate-500/10 backdrop-blur xsm:text-[0.6rem] xsm:px-[0.5rem] xsm:py-[0.25rem] rounded-full">CSS</p>
+              <Image 
+              src={css}
+              alt="CSS"
+              className="h-16 w-16 z-[2]"
+              />
+            </div>
           </Reveal>
           <Reveal>
-            <Image 
-            src={tailwind}
-            alt="Tailwind"
-            className="h-16 w-16"
-            />
+            <div className="relative z-[2] cursor-pointer icon">
+              <p className="absolute tooltip top-0 opacity-0 pointer-events-none bg-slate-500/10 backdrop-blur xsm:text-[0.55rem] xsm:px-[0.5rem] xsm:py-[0.25rem] rounded-full">Javascript</p>
+              <Image 
+              src={js}
+              alt="JavaScript"
+              className="h-16 w-16 z-[2]"
+              />
+            </div>
           </Reveal>
           <Reveal>
-            <Image 
-            src={js}
-            alt="JavaScript"
-            className="h-16 w-16"
-            />
+            <div className="relative z-[2] cursor-pointer icon">
+              <p className="absolute tooltip top-0 opacity-0 pointer-events-none bg-slate-500/10 backdrop-blur xsm:text-[0.6rem] xsm:px-[0.5rem] xsm:py-[0.25rem] rounded-full">Typescript</p>
+              <Image 
+              src={typescript}
+              alt="Typescript"
+              className="h-16 w-16 z-[2]"
+              />
+            </div>
           </Reveal>
           <Reveal>
-            <Image 
-            src={npm}
-            alt="NPM"
-            className="h-16 w-16"
-            />
+            <div className="relative z-[2] cursor-pointer icon">
+              <p className="absolute tooltip top-0 opacity-0 pointer-events-none left-3 bg-slate-500/10 backdrop-blur xsm:text-[0.6rem] xsm:px-[0.5rem] xsm:py-[0.25rem] rounded-full">NPM</p>
+              <Image 
+              src={npm}
+              alt="NPM"
+              className="h-16 w-16 z-[2]"
+              />
+            </div>
           </Reveal>
           <Reveal>
-            <Image 
-            src={jest}
-            alt="Jest"
-            className="h-16 w-16"
-            />
+            <div className="relative z-[2] cursor-pointer icon">
+              <p className="absolute tooltip top-0 opacity-0 pointer-events-none left-[0.85rem] bg-slate-500/10 backdrop-blur xsm:text-[0.6rem] xsm:px-[0.5rem] xsm:py-[0.25rem] rounded-full">Jest</p>
+              <Image 
+              src={jest}
+              alt="Jest"
+              className="h-16 w-16 z-[2]"
+              />
+            </div>
           </Reveal>
           <Reveal>
-            <Image 
-            src={react}
-            alt="React"
-            className="h-16 w-16"
-            />
+            <div className="relative z-[2] cursor-pointer icon">
+              <p className="absolute tooltip top-0 opacity-0 pointer-events-none left-[0.65rem] bg-slate-500/10 backdrop-blur xsm:text-[0.6rem] xsm:px-[0.5rem] xsm:py-[0.25rem] rounded-full">React</p>
+              <Image 
+              src={react}
+              alt="React"
+              className="h-16 w-16 z-[2]"
+              />
+            </div>
           </Reveal>
           <Reveal>
-            <Image 
-            src={git}
-            alt="GIT"
-            className="h-16 w-16"
-            />
+            <div className="relative z-[2] cursor-pointer icon">
+              <p className="absolute tooltip top-0 opacity-0 pointer-events-none bg-slate-500/10 backdrop-blur xsm:text-[0.5rem] xsm:px-[0.5rem] xsm:py-[0.25rem] rounded-full">TailwindCSS</p>
+              <Image 
+              src={tailwind}
+              alt="Tailwind"
+              className="h-16 w-16 z-[2]"
+              />
+            </div>
           </Reveal>
           <Reveal>
-            <Image 
-            src={node}
-            alt="NodeJS"
-            className="h-16 w-16"
-            />
+            <div className="relative z-[2] cursor-pointer icon">
+              <p className="absolute tooltip top-0 opacity-0 pointer-events-none left-[1.05rem] bg-slate-500/10 backdrop-blur xsm:text-[0.6rem] xsm:px-[0.5rem] xsm:py-[0.25rem] rounded-full">Git</p>
+              <Image 
+              src={git}
+              alt="GIT"
+              className="h-16 w-16 z-[3]"
+              />
+            </div>
           </Reveal>
           <Reveal>
-            <Image 
-            src={postgre}
-            alt="PostgreSQL"
-            className="h-16 w-16"
-            />
+            <div className="relative z-[2] cursor-pointer icon">
+              <p className="absolute tooltip top-0 opacity-0 pointer-events-none left-[0.30rem] bg-slate-500/10 backdrop-blur xsm:text-[0.6rem] xsm:px-[0.5rem] xsm:py-[0.25rem] rounded-full">NodeJS</p>
+              <Image 
+              src={node}
+              alt="NodeJS"
+              className="h-16 w-16 z-[2]"
+              />
+            </div>
           </Reveal>
           <Reveal>
-            <Image 
-            src={mongo}
-            alt="MongoDB"
-            className="h-16 w-16"
-            />
+            <div className="relative z-[2] cursor-pointer icon">
+              <p className="absolute tooltip top-0 opacity-0 pointer-events-none bg-slate-500/10 backdrop-blur xsm:text-[0.5rem] xsm:px-[0.5rem] xsm:py-[0.25rem] rounded-full">PostgreSQL</p>
+              <Image 
+              src={postgre}
+              alt="PostgreSQL"
+              className="h-16 w-16 z-[2]"
+              />
+            </div>
           </Reveal>
           <Reveal>
-            <Image 
-            src={typescript}
-            alt="Typescript"
-            className="h-16 w-16"
-            />
+            <div className="relative z-[2] cursor-pointer icon">
+              <p className="absolute tooltip top-0 opacity-0 pointer-events-none bg-slate-500/10 backdrop-blur xsm:text-[0.6rem] xsm:px-[0.5rem] xsm:py-[0.25rem] rounded-full">MongoDB</p>
+              <Image 
+              src={mongo}
+              alt="MongoDB"
+              className="h-16 w-16 z-[2]"
+              />
+            </div>
           </Reveal>
         </div>
       </div>

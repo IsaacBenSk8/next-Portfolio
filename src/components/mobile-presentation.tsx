@@ -39,7 +39,7 @@ export default function MobilePresentation() {
           </Link>
         </Reveal>
         <Reveal>
-          <div className="flex flex-row xsm:space-x-6">
+          <div className="flex flex-row xsm:space-x-6 overflow-hidden">
             <div className="xsm:w-[2rem] xsm:h-[2rem] flex justify-center">
               <Link
               href="https://www.linkedin.com/in/isaac-flores-0ab8a6169/"

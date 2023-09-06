@@ -63,3 +63,13 @@ body {
     @apply bg-slate-500/10 backdrop-blur;
   }
 }
+
+.icon .tooltip {
+  transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.icon:hover .tooltip {
+  top: 1.10rem;
+  opacity: 1;
+  pointer-events: auto;
+}
