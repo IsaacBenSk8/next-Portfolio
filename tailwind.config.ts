@@ -11,7 +11,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'lights' : "url('/img/bgv8.svg')",
-        'phone' : "url('/img/bg-phone.png')",
+        'phone' : "url('/img/bg-phone.svg')",
       },
       screens: {
         'xsm': '320px',
