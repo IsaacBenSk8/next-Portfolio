@@ -1,5 +1,5 @@
 import Reveal from "./reveal";
-import SliderPics from "./slider-pics";
+import SliderPics from "./grid-pics";
 
 export default function About() {
   return (
