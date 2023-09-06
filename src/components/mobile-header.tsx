@@ -18,7 +18,7 @@ export default function MobileHeader() {
       <Reveal>
         <div className='flex flex-row items-center space-x-4'>
           <LightSwitch />
-          <button className='w-10 h-10'>
+          <button className='w-6 h-6'>
             <Image
             src={bar}
             alt='Barra'

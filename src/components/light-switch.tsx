@@ -18,7 +18,7 @@ export default function LightSwitch() {
   if (!mounted) {
     return <Reveal>
       <button 
-      className="w-10 h-10">
+      className="w-6 h-6">
               <Image
               src={sun}
               alt="Light"
@@ -33,7 +33,7 @@ export default function LightSwitch() {
     <button
     aria-label={theme === 'light' ? 'Toggle Dark Mode' : 'Toggle Light Mode'}
     type="button"
-    className="w-10 h-10"
+    className="w-6 h-6"
     onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
         {theme === 'light' ?
         <Image
