@@ -7,7 +7,7 @@ import Link from 'next/link';
 export default function MobileHeader() {
 
   return (
-    <header className='anima z-[2] flex flex-row items-center justify-center xsm:w-full  xsm:space-x-32 py-4'>
+    <header className='anima z-[4] flex flex-row items-center justify-center xsm:w-full  xsm:space-x-32 py-4'>
       <Reveal>
         <Link 
         href="#homeSection"
