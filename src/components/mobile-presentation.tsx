@@ -15,7 +15,7 @@ export default function MobilePresentation() {
         <Image
         src={profile}
         alt="Perfil"
-        className="xsm:w-[14rem] xsm:h-[14rem] xsm:my-8"
+        className="xsm:w-[16rem] xsm:h-[16rem] xsm:my-6"
         priority={true}/>
       </Reveal>
       <Reveal>
