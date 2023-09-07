@@ -3,12 +3,12 @@
 <defs>
     <style>
       path {
-        fill: #212427;
-        transition: fill .4s ease;
+        stroke: #212427;
+        transition: stroke .4s ease;
       }
       @media (prefers-color-scheme:dark) {
         path {
-          fill: #818cf8;
+          stroke: #818cf8;
         }
       }
     </style>

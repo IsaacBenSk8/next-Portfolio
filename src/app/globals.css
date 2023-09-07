@@ -73,3 +73,30 @@ body {
   opacity: 1;
   pointer-events: auto;
 }
+
+.line {
+  @apply fill-[#212427] dark:fill-[#818cf8];
+  transition: fill .2s ease;
+}
+
+.line {
+  transition: .4s;
+  transform-origin: center;
+}
+
+.button-one[aria-expanded="true"] :is(.top, .bottom){
+  y: 10;
+}
+
+.button-one[aria-expanded="true"] .top{
+  rotate: 45deg;
+}
+
+.button-one[aria-expanded="true"] .middle{
+  rotate: 45deg;
+  opacity: 0;
+}
+
+.button-one[aria-expanded="true"] .bottom{
+  rotate: -45deg;
+}
