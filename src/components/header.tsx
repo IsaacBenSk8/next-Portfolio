@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <>
     <header className="flex items-center my-16">
-        <Reveal>
+        <Reveal className="">
           <h1 className="select-none font-semibold text-6xl mx-32">if(C)</h1>
         </Reveal>
       <NavBar/>

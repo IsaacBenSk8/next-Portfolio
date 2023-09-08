@@ -4,10 +4,10 @@ import Reveal from "./reveal";
 export default function Projects() {
   return (
     <section id="projectsSection" className="max-w-4xl w-fit h-fit space-y-8 py-44">
-      <Reveal>
+      <Reveal className="">
         <h2 className="text-emerald-400 text-6xl">PROJECTS</h2>
       </Reveal>
-      <Reveal>
+      <Reveal className="">
         <Card>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ducimus, voluptatem ipsum et mollitia ad illum eaque. Cupiditate nam officiis aliquam ab debitis eligendi ipsum, suscipit repellendus, eaque, laborum ratione.
           </p>
@@ -21,7 +21,7 @@ export default function Projects() {
           </p>
         </Card>
       </Reveal>
-      <Reveal>
+      <Reveal className="">
         <Card>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ducimus, voluptatem ipsum et mollitia ad illum eaque. Cupiditate nam officiis aliquam ab debitis eligendi ipsum, suscipit repellendus, eaque, laborum ratione.
           </p>
@@ -35,7 +35,7 @@ export default function Projects() {
           </p>
         </Card>
       </Reveal>
-      <Reveal>
+      <Reveal className="">
         <Card>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ducimus, voluptatem ipsum et mollitia ad illum eaque. Cupiditate nam officiis aliquam ab debitis eligendi ipsum, suscipit repellendus, eaque, laborum ratione.
           </p>
@@ -49,7 +49,7 @@ export default function Projects() {
           </p>
         </Card>
       </Reveal>
-      <Reveal>
+      <Reveal className="">
         <Card>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ducimus, voluptatem ipsum et mollitia ad illum eaque. Cupiditate nam officiis aliquam ab debitis eligendi ipsum, suscipit repellendus, eaque, laborum ratione.
           </p>

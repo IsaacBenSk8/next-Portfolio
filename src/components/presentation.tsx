@@ -13,17 +13,17 @@ export default function Presentation() {
     <section className="flex justify-evenly items-center py-24 space-x-36">
       <div className="space-y-8">
         <div className="presentation">
-          <Reveal>
+          <Reveal className="">
           <h3 className="px-1">Hi! I&apos;m</h3>
           </Reveal>
-          <Reveal>
+          <Reveal className="">
           <h1 className="text-6xl">Isaac <span className="detail">FC</span></h1>
           </Reveal>
-          <Reveal>
+          <Reveal className="">
           <TextType />
           </Reveal>
         </div>
-        <Reveal>
+        <Reveal className="">
           <Link 
           href="/2023_01_isaac_flores_carbajal_resume.pdf"
           target="_blank"
@@ -41,7 +41,7 @@ export default function Presentation() {
           </Link>
         </Reveal>
           <div className="flex flex-wrap space-x-8 px-6">
-            <Reveal>
+            <Reveal className="">
               <Link 
               href="https://www.linkedin.com/in/isaac-flores-0ab8a6169/"
               target="_blank">
@@ -54,7 +54,7 @@ export default function Presentation() {
               />
               </Link>
             </Reveal>
-            <Reveal>
+            <Reveal className="">
               <Link 
               href="https://github.com/IsaacBenSk8"
               target="_blank">
@@ -67,7 +67,7 @@ export default function Presentation() {
               />
               </Link>
             </Reveal>
-            <Reveal>
+            <Reveal className="">
               <Link href="mailto:isaacflores590@gmail.com"
               target="_blank">
               <Image 
@@ -81,7 +81,7 @@ export default function Presentation() {
             </Reveal>
           </div>
         </div>
-      <Reveal>
+      <Reveal className="">
         <Image
         src={profile}
         alt="profile"

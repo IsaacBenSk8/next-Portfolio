@@ -34,10 +34,10 @@ export default function MobileContact() {
     <section
     id="contactSection" 
     className="flex flex-col items-center xsm:my-6 xsm:space-y-8">
-      <Reveal>
+      <Reveal className="">
         <h2 className="xsm:text-4xl text-fuchsia-400 font-medium">CONTACT</h2>
       </Reveal>
-      <Reveal>
+      <Reveal className="">
         <div className="xsm:w-[18rem] xsm:h-[24rem] roundlevel border border-gray-600/40 dark:border-indigo-400/80 bg-white/20 dark:bg-slate-500/10">
         <form 
         className="flex flex-col items-center xsm:w-full xsm:h-full justify-center xsm:space-y-2"

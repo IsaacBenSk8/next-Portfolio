@@ -11,14 +11,14 @@ import Reveal from "./reveal";
 export default function MobilePresentation() {
   return (
     <main className="xsm:w-[20rem] xsm:h-fit flex flex-col items-center">
-      <Reveal>
+      <Reveal className="">
         <Image
         src={profile}
         alt="Perfil"
         className="xsm:w-[16rem] xsm:h-[16rem] xsm:my-6"
         priority={true}/>
       </Reveal>
-      <Reveal>
+      <Reveal className="">
       <section className="flex xsm:flex-col w-[20rem] items-center">
         <h3>Hi I&apos;m</h3>
         <h1 className="xsm:text-4xl">Isaac FC</h1>
@@ -26,7 +26,7 @@ export default function MobilePresentation() {
       </section>
       </Reveal>
       <section className="xsm:w-[20rem] xsm:h-[8rem] xsm:mt-6 flex flex-col items-center space-y-6">
-        <Reveal>
+        <Reveal className="">
           <Link
           href="/2023_01_isaac_flores_carbajal_resume.pdf"
           target="_blank"
@@ -38,7 +38,7 @@ export default function MobilePresentation() {
             />
           </Link>
         </Reveal>
-        <Reveal>
+        <Reveal className="">
           <div className="flex flex-row xsm:space-x-6 overflow-hidden">
             <div className="xsm:w-[2rem] xsm:h-[2rem] flex justify-center">
               <Link

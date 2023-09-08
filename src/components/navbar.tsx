@@ -5,7 +5,7 @@ export default function NavBar() {
   const navLinks = ["HOME", "ABOUT", "PROJECTS", "CONTACT"];
 
   return (
-    <Reveal>
+    <Reveal className="">
     <nav className="2xl:flex px-24 rounded-full border border-gray-600/40 dark:border-indigo-400/80">
             <ul className="flex flex-row items-center font-light">
               {navLinks.map((element) =>

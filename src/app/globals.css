@@ -71,4 +71,8 @@ body {
 .button-one[aria-expanded="true"] .bottom{
   transform-origin: 5px 16px;
   rotate: -45deg;
-} 
+}
+
+.mobileNav {
+  @apply w-fit h-fit bg-slate-500/10 backdrop-blur;
+}
