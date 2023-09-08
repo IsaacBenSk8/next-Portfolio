@@ -74,79 +74,23 @@ body {
   pointer-events: auto;
 }
 
-.burger {
-  border: 1px solid black;
-}
-
 .line {
   @apply stroke-[#212427] dark:stroke-[#818cf8];
-  transition: stroke .4s ease;
+  transition: all .2s ease;
 }
 
-/* .top {
-  animation: openIcon 1s forwards;
-}
-
-.button-one[aria-expanded="true"] .line .top{
-  animation: closeIcon 1s forwards;
-}
-
-@keyframes closeIcon {
-  0% {
-    x1: 2;
-    y1: 6;
-    x2: 22;
-    y2: 6;
-  }
-  50% {
-    x1: 2;
-    y1: 6;
-    x2: 2;
-    y2: 6;
-  }
-  100% {
-    x1: 2;
-    y1: 6;
-    x2: 2;
-    y2: 6;
-  }
-} */
-
-/* @keyframes openIcon {
-  0% {
-    x1: 10;
-    y1: 10;
-    x2: 90;
-    y2: 90;
-  }
-  50% {
-    x1: 20;
-    y1: 20;
-    x2: 80;
-    y2: 80;
-  }
-  100% {
-    x1: 10;
-    y1: 10;
-    x2: 90;
-    y2: 90;
-  }
-} */
-
-/* .line {
-  transition: .4s;
-  transform-origin: center;
-} */
-
-/* .button-one[aria-expanded="true"] .top{
+.button-one[aria-expanded="true"] .top{
+  transform-origin: 4px 9px;
   rotate: 45deg;
 }
 
 .button-one[aria-expanded="true"] .middle{
+  transform-origin: 12px 12px;
   rotate: 45deg;
   opacity: 0;
 }
 
 .button-one[aria-expanded="true"] .bottom{
+  transform-origin: 5px 16px;
   rotate: -45deg;
-} */
+} 
