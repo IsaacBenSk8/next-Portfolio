@@ -16,9 +16,9 @@ export default function LightSwitch() {
   }, [])
 
   if (!mounted) {
-    return <Reveal>
+    return <Reveal display="flex" justifyContent="center">
       <button 
-      className="w-6 h-6">
+      className="ml-[3rem] w-6 h-6">
               <Image
               src={sun}
               alt="Light"
@@ -30,6 +30,7 @@ export default function LightSwitch() {
       
   }
   return (
+    <Reveal display="flex" justifyContent="center">
     <button
     aria-label={theme === 'light' ? 'Toggle Dark Mode' : 'Toggle Light Mode'}
     type="button"
@@ -50,5 +51,6 @@ export default function LightSwitch() {
         />
       }
     </button>
+    </Reveal>
   )
 }
