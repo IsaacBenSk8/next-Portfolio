@@ -35,10 +35,10 @@ export default function Contact() {
 
     id="contactSection" 
     className="flex flex-col items-center max-w-4xl w-fit h-fit space-y-10 py-44">
-      <Reveal>
+      <Reveal className="">
         <h2 className="text-6xl">CONTACT</h2>
       </Reveal>
-      <Reveal>
+      <Reveal className="">
       <div className="size border border-gray-600/40 dark:border-indigo-400/80 roundlevel bg-white/20 dark:bg-black/30">
         <form 
         className="flex flex-col items-center space-y-4 px-24 py-14"
