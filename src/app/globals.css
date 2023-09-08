@@ -73,6 +73,6 @@ body {
   rotate: -45deg;
 }
 
-.mobileNav {
-  @apply w-fit h-fit bg-slate-500/10 backdrop-blur;
+.filter {
+  backdrop-filter: 16px;
 }

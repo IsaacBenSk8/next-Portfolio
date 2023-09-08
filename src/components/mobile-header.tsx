@@ -4,8 +4,6 @@ import LightSwitch from './light-switch';
 import Reveal from './reveal';
 import Link from 'next/link';
 import { useState } from 'react';
-import RevealOut from './reveal-out';
-// import styles from '@/components/header.module.css'
 
 export default function MobileHeader() {
   const navLinks = ["HOME", "ABOUT", "PROJECTS", "CONTACT"];
@@ -31,7 +29,7 @@ export default function MobileHeader() {
                 </svg>
               </Reveal>
               {isActive === true ?
-              <Reveal className="absolute w-fit h-fit bg-slate-500/10 xsm:px-10 xsm:py-2 top-[2.86rem] right-1">
+              <Reveal className="absolute w-fit h-fit bg-slate-500/10 xsm:px-10 xsm:py-2 top-[2.86rem] right-1 rounded-b-lg">
                 <ul>
                       {navLinks.map(e => 
                       <li key={crypto.randomUUID()}>
@@ -45,7 +43,6 @@ export default function MobileHeader() {
               </Reveal> :
               <></>
               }
-              
             </button>
       </header>
   );
