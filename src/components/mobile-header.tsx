@@ -26,10 +26,11 @@ export default function MobileHeader() {
             <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
           </button> */}
           <button onClick={() => {setIsActive(!isActive)}} className="button-one" aria-controls="primary-navigation" aria-expanded={isActive ? "true" : "false"}>
-            <svg className="burguer" viewBox="0 0 24 24" width={24}>
-              <rect className="line top" width={20} height={3} x={2} y={4} rx={2}></rect>
-              <rect className="line middle" width={20} height={3} x={2} y={10} rx={2}></rect>
-              <rect className="line bottom" width={20} height={3} x={2} y={16} rx={2}></rect>
+            <svg xmlns="http://www.w3.org/2000/svg" className="burger" viewBox="0 0 24 24" width={24}>
+              <line className="line top" x1="2" x2="22" y1="6" y2="6" strokeWidth={3} strokeLinecap="round" strokeDasharray={20} strokeDashoffset={0}>
+              </line>
+              <line className="line middle" x1="2" x2="22" y1="12" y2="12" strokeWidth={3} strokeLinecap="round" strokeDasharray={20} strokeDashoffset={0}></line>
+              <line className="line bottom" x1="22" x2="2" y1="18" y2="18" strokeWidth={3} strokeLinecap="round" strokeDasharray={20} strokeDashoffset={0}></line>
             </svg>
           </button>
         </div>

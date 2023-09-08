@@ -38,7 +38,7 @@
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="108" result="effect1_foregroundBlur_338_310"/>
 </filter>
-<filter id="filter3_f_338_310" x="1358.39" y="305.898" width="757.916" height="728.271" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter3_f_338_310" x="1358.39" y="305.898" width="857.916" height="828.271" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="104" result="effect1_foregroundBlur_338_310"/>
