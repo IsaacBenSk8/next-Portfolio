@@ -10,7 +10,7 @@ import Reveal from "./reveal";
 
 export default function MobilePresentation() {
   return (
-    <main className="xsm:w-[20rem] xsm:h-fit flex flex-col items-center xsm:mb-10">
+    <main className="xsm:w-[20rem] xsm:h-fit flex flex-col items-center">
       <Reveal>
         <Image
         src={profile}
@@ -25,7 +25,7 @@ export default function MobilePresentation() {
         <TextType />
       </section>
       </Reveal>
-      <section className="xsm:w-[20rem] xsm:h-[8rem] xsm:my-6 flex flex-col items-center space-y-6">
+      <section className="xsm:w-[20rem] xsm:h-[8rem] xsm:mt-6 flex flex-col items-center space-y-6">
         <Reveal>
           <Link
           href="/2023_01_isaac_flores_carbajal_resume.pdf"

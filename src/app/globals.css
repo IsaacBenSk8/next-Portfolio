@@ -14,30 +14,8 @@ body {
   border-radius: 3rem;
 }
 
-.rounded-details {
-  border-top-left-radius: 3rem;
-  border-bottom-left-radius: 3rem;
-}
-
-.size {
-  width: 56rem;
-  height: 34rem;
-}
-
-.inputsize {
-  width: 44rem;
-}
-
 .roundedlevel {
   border-radius: 2.5rem;
-}
-
-.balance {
-  white-space: pre balance;
-}
-
-.presentation {
-  width: 41rem;
 }
 
 .detail:hover::after {
