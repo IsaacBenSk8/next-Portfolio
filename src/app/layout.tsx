@@ -8,7 +8,7 @@ const poppins = Poppins({weight: ['100', '200', '300', '400', '500', '600', '700
 
 export const metadata: Metadata = {
   title: 'Isaac FC - Full Stack Developer',
-  description: 'Portfolio of Isaac FC',
+  description: ``,
 }
 
 export default function RootLayout({children}: {

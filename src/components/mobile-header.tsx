@@ -3,7 +3,7 @@
 import LightSwitch from './light-switch';
 import Reveal from './reveal';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { motion, useCycle, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 
 export default function MobileHeader() {
@@ -30,21 +30,46 @@ export default function MobileHeader() {
                     <line className="line bottom" x1="22" x2="2" y1="18" y2="18" strokeWidth={3} strokeLinecap="round" strokeDasharray={20} strokeDashoffset={0}></line>
                   </svg>
                 </Reveal>
-                {isActive === true ?
-                <motion.div className="inset-0 fixed h-[100dvh] bg-white/80 dark:bg-black/80 flex flex-col justify-center bac">
-                  <ul className='space-y-4'>
-                      {navLinks.map(e => 
-                      <li key={crypto.randomUUID()}>
-                        <Link 
-                        href={`#${e.toLowerCase()}Section`}
-                        className="text-4xl font-semibold">
-                          {e}
-                        </Link>
-                      </li>)}
-                  </ul> 
-                </motion.div> :
-                <></>
-                }
+                <AnimatePresence>
+                  {isActive && (
+                    <motion.div
+                    key={crypto.randomUUID()}
+                    variants={{
+                      open: {
+                        x: "0%",
+                        opacity: 1,
+                        transition: {
+                          delayChildren: 0.1,
+                          staggerChildren: 0.1
+                        },
+                      },
+                      closed: {
+                        x: "-100%",
+                        opacity: 0,
+                      },
+                    }}
+                    initial="closed"
+                    animate="open"
+                    exit="closed"
+                    className="inset-0 fixed h-[100dvh] color bg-white/80 dark:bg-black/80 flex flex-col justify-center">
+                      <ul className='space-y-4'>
+                          {navLinks.map(e => 
+                          <motion.li 
+                          key={crypto.randomUUID()}
+                          variants={{
+                            closed: { y: 20, opacity: 0 },
+                            open: { y: 0, opacity: 1 },
+                          }}>
+                            <Link   
+                            href={`#${e.toLowerCase()}Section`}
+                            className="text-4xl font-semibold">
+                              {e}
+                            </Link>
+                          </motion.li>)}
+                      </ul> 
+                    </motion.div> 
+                  )}
+                </AnimatePresence>
               </button>
           </div>
       </header>
