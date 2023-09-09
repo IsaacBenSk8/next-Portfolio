@@ -107,7 +107,7 @@ export default function GridPics() {
               <Image 
               src={git}
               alt="GIT"
-              className="h-16 w-16 z-[3]"
+              className="h-16 w-16"
               />
             </div>
           </Reveal>

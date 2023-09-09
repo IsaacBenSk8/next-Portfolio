@@ -3,7 +3,7 @@ import GridPics from "./grid-pics";
 
 export default function MobileAbout() {
   return (
-    <section id="aboutSection" className="xsm:w-[20rem] xsm:h-[68rem] flex flex-col items-center xsm:pt-20 space-y-6">
+    <section id="aboutSection" className="xsm:w-[20rem] xsm:h-fit flex flex-col items-center xsm:pt-20 space-y-6">
       <Reveal className="">
         <h2 className="xsm:text-4xl text-cyan-400 font-medium">ABOUT</h2>
       </Reveal>
