@@ -3,7 +3,7 @@
 import LightSwitch from './light-switch';
 import Reveal from './reveal';
 import Link from 'next/link';
-import { motion, useCycle, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 
 export default function MobileHeader() {
@@ -11,15 +11,32 @@ export default function MobileHeader() {
   const [isActive, setIsActive] = useState(false);
 
   return (
-      <header className='anima sticky top-0 z-10 inset-x-0 flex flex-row items-center justify-between xsm:w-full py-4'>
+      <header className='sticky top-0 z-10 inset-x-0 flex flex-row items-center justify-center xsm:w-full py-4 2xl:py-[4rem]'>
           <Link
           href="#homeSection"
           scroll={true}>
             <Reveal className="">
-              <h1 className='select-none xsm:text-3xl xsm:ml-[2rem] w-fit h-fit font-semibold'>if(C)</h1>
+              <h1 className='static select-none xsm:text-3xl xsm:mr-[4rem] w-fit h-fit font-semibold 2xl:text-5xl 2xl:m-0'>if(C)</h1>
             </Reveal>
           </Link>
-          <div className='flex flex-row xsm:mr-[2rem] w-fit'>
+          <Reveal className="">
+            <nav className="xsm:hidden 2xl:flex px-24 rounded-full border border-gray-600/40 dark:border-indigo-400/80 bg-white/20 dark:bg-slate-500/20 backdrop-blur 2xl:mx-[10rem]">
+                  <ul className="flex flex-row items-center font-light">
+                      {navLinks.map((element) =>
+                        <li key={crypto.randomUUID()}>
+                          <Link 
+                          href={`#${element.toLowerCase()}Section`}
+                          >
+                            <h1 className="py-4 px-10 w-fit h-fit text-base transition-colors ease-in-out duration-300 hover:text-emerald-400 dark:hover:text-fuchsia-500">
+                              {element}
+                            </h1>
+                          </Link>
+                        </li>
+                      )}
+                  </ul>
+            </nav>
+          </Reveal>
+          <div className='flex flex-row xsm:ml-[4rem] w-fit 2xl:m-0'>
             <LightSwitch />
               <button onClick={() => {setIsActive(!isActive)}} className="xl:hidden button-one relative ml-4" aria-controls="primary-navigation" aria-expanded={isActive ? "true" : "false"}>
                 <Reveal className="">
@@ -37,21 +54,19 @@ export default function MobileHeader() {
                     variants={{
                       open: {
                         x: "0%",
-                        opacity: 1,
                         transition: {
-                          delayChildren: 0.1,
+                          delayChildren: 0.3,
                           staggerChildren: 0.1
                         },
                       },
                       closed: {
                         x: "-100%",
-                        opacity: 0,
                       },
                     }}
                     initial="closed"
                     animate="open"
                     exit="closed"
-                    className="inset-0 fixed h-[100dvh] color bg-white/80 dark:bg-black/80 flex flex-col justify-center">
+                    className="inset-0 fixed h-[100dvh] color bg-white/90 dark:bg-black/90 flex flex-col justify-center">
                       <ul className='space-y-4'>
                           {navLinks.map(e => 
                           <motion.li 

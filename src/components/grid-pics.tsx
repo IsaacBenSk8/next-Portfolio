@@ -15,7 +15,7 @@ import Reveal from "./reveal"
 
 export default function GridPics() {
   return (
-    <div className="flex flex-col items-center xsm:w-[18rem] space-y-6 h-fit">
+    <div className="flex flex-col items-center xsm:w-[18rem] space-y-6 h-fit 2xl:hidden">
       <Reveal className="">
         <h3 className="w-full xsm:text-4xl font-medium text-amber-400">SKILLS</h3>
       </Reveal>

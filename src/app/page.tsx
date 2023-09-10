@@ -1,13 +1,9 @@
-import About from "@/components/about";
-import Contact from "@/components/contact";
-import Header from "@/components/header";
+import GridPics from "@/components/grid-pics";
 import MobileAbout from "@/components/mobile-about";
 import MobileContact from "@/components/mobile-contact";
 import MobileHeader from "@/components/mobile-header";
 import MobilePresentation from "@/components/mobile-presentation";
 import MobileProjects from "@/components/mobile-projects";
-import Presentation from "@/components/presentation";
-import Projects from "@/components/projects";
 
 export default function Page() {
   return (
@@ -15,13 +11,9 @@ export default function Page() {
       <MobileHeader />
       <MobilePresentation />
       <MobileAbout />
+      <GridPics />
       <MobileProjects />
       <MobileContact />
-      {/* <Header />
-      <Presentation />
-      <About />
-      <Projects />
-      <Contact /> */}
     </>
   )
 }

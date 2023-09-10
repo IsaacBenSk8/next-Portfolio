@@ -28,7 +28,7 @@ export default function LightSwitch() {
   if (!mounted) {
     return <Reveal className="flex justify-center">
       <button 
-      className="ml-[1rem] w-6 h-6">
+      className="ml-[1rem] w-6 h-6 2xl:m-0">
               <Image
               src={sun}
               alt="Light"
@@ -45,7 +45,7 @@ export default function LightSwitch() {
     aria-label={theme === 'light' ? 'Activate Dark Mode' : 'Activate Light Mode'}
     title={theme === 'light' ? 'Activate Dark Mode' : 'Activate Light Mode'}
     type="button"
-    className="ml-[1rem] w-6 h-6"
+    className="ml-[1rem] w-6 h-6 2xl:ml-20"
     onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
         {theme === 'light' ?
         // <motion.div
@@ -65,7 +65,7 @@ export default function LightSwitch() {
           <Image
           src={sun}
           alt="Light"
-          className="object-contain"
+          className="w-fit h-fit"
           priority={true}
           /> 
         // </motion.div>
@@ -74,7 +74,7 @@ export default function LightSwitch() {
           <Image 
           src={moon}
           alt="Dark"
-          className="object-contain"
+          className="w-fit h-fit"
           priority={true}
           />
         </motion.div>

@@ -78,3 +78,12 @@ body {
 .color {
   transition: background-color .4s ease;
 }
+
+.glow {
+  transition: filter 0.2s ease;
+}
+
+.glow:hover {
+  @apply drop-shadow-[0px_0px_10px_rgb(78,255,158)] dark:drop-shadow-[0px_0px_10px_rgb(230,37,255)];
+}
+
