@@ -33,7 +33,7 @@ export default function MobilePresentation() {
         <section className="xsm:w-fit xsm:h-[8rem] xsm:mx-auto xsm:mt-6 flex flex-col items-center xsm:space-y-6 2xl:mx-0 2xl:items-start">
           <Reveal className="">
             <Link
-            href="/2023_01_isaac_flores_carbajal_resume.pdf"
+            href="/2023_isaac_flores_carbajal_resume.pdf"
             target="_blank"
             className="flex flex-row rounded-full xsm:py-2 xsm:px-4 space-x-2 border border-gray-600/40 dark:border-indigo-400/80 bg-white/20 dark:bg-slate-500/10 2xl:py-3 2xl:px-8 2xl:my-4">
               <h2 className="xsm:hidden 2xl:flex font-semibold tracking-widest text-xl ">
