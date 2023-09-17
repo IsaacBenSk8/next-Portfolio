@@ -35,11 +35,11 @@ export default function MobilePresentation() {
             <Link
             href="/2023_isaac_flores_carbajal_resume.pdf"
             target="_blank"
-            className="flex flex-row rounded-full xsm:py-2 xsm:px-4 space-x-2 border border-gray-600/40 dark:border-indigo-400/80 bg-white/20 dark:bg-slate-500/10 2xl:py-3 2xl:px-8 2xl:my-4">
-              <h2 className="xsm:hidden 2xl:flex font-semibold tracking-widest text-xl ">
+            className="flex flex-row rounded-full xsm:py-2 xsm:px-4 border border-gray-600/40 dark:border-indigo-400/80 bg-white/20 dark:bg-slate-500/10 2xl:py-3 2xl:px-8 2xl:my-4">
+              <h2 className="xsm:hidden 2xl:flex font-semibold tracking-widest text-xl 2xl:mr-2">
                 DOWNLOAD CV
               </h2>
-              <h2 className="xsm:text-xl font-semibold 2xl:hidden">CV</h2>
+              <h2 className="xsm:text-xl xsm:mr-2 font-semibold 2xl:hidden">CV</h2>
               <Image
               src={download}
               alt="Download"
