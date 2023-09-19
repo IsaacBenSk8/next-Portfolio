@@ -4,6 +4,7 @@ import Image from "next/image";
 import send from "@/img/send_2.svg"
 import { useState } from "react";
 import Reveal from "./reveal";
+import toast from "react-hot-toast";
 
 export default function MobileContact() {
 
@@ -28,11 +29,14 @@ export default function MobileContact() {
     })
 
     if (response.ok) {
-      console.log("Message sent successfully")
       setLoading(false);
+      event.target.name.value = "";
+      event.target.email.value = "";
+      event.target.message.value = "";
+      toast.success("Message sent successfully")
     }
     if (!response.ok) {
-      console.log("Error sending message")
+      toast.error("Error sending message")
       setLoading(false);
     }
   }
@@ -79,7 +83,7 @@ export default function MobileContact() {
               width={40}
               height={40}
             />
-    </button>
+          </button>
         </form>
         </div>
       </Reveal>
