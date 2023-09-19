@@ -1,12 +1,17 @@
 'use client'
 
 import Image from "next/image";
-import Reveal from "./reveal";
 import send from "@/img/send_2.svg"
+import { useState } from "react";
+import Reveal from "./reveal";
 
 export default function MobileContact() {
+
+  const [loading, setLoading] = useState(false);
+
   async function handleSubmit(event: any) {
     event.preventDefault();
+    setLoading(true);
 
     const data = {
       name: String(event.target.name.value),
@@ -24,9 +29,11 @@ export default function MobileContact() {
 
     if (response.ok) {
       console.log("Message sent successfully")
+      setLoading(false);
     }
     if (!response.ok) {
       console.log("Error sending message")
+      setLoading(false);
     }
   }
 
@@ -62,7 +69,7 @@ export default function MobileContact() {
             placeholder="Type Message Here" 
             required></textarea>
           </label>
-          <button type="submit" className="flex items-center 2xl:rounded-full 2xl:border 2xl:border-gray-600/40 2xl:dark:border-indigo-400/80 2xl:dark:bg-black/10 2xl:px-6 2xl:tracking-widest">
+          <button type="submit" disabled={loading} className="flex items-center 2xl:rounded-full 2xl:border 2xl:border-gray-600/40 2xl:dark:border-indigo-400/80 2xl:dark:bg-black/10 2xl:px-6 2xl:tracking-widest disabled:opacity-20">
             <h2 className="xsm:hidden 2xl:inline font-semibold text-xl">
             SEND
             </h2>
@@ -72,7 +79,7 @@ export default function MobileContact() {
               width={40}
               height={40}
             />
-          </button>
+    </button>
         </form>
         </div>
       </Reveal>
