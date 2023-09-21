@@ -1,7 +1,5 @@
 'use client'
 
-import Image from "next/image";
-import send from "@/img/send_2.svg"
 import { useState } from "react";
 import Reveal from "./reveal";
 import toast from "react-hot-toast";
@@ -56,17 +54,17 @@ export default function MobileContact() {
         onSubmit={handleSubmit}>
           <label htmlFor="name">
             <input
-            className="rounded-full autocomplete bg-transparent border border-gray-600/40 dark:border-indigo-400/80 py-2 px-6 dark:bg-black/10 text-center placeholder:text-center inputsize xsm:text-xs xsm:w-[16rem] xsm:h-[2rem] 2xl:w-[44rem] 2xl:h-[3rem] 2xl:text-xl"
+            className="rounded-full autocomplete bg-transparent border border-gray-600/40 dark:border-indigo-400/80 py-2 px-6 dark:bg-black/10 text-center placeholder:text-center placeholder:text-black/50 dark:placeholder:text-white/50 inputsize xsm:text-xs xsm:w-[16rem] xsm:h-[2rem] 2xl:w-[44rem] 2xl:h-[3rem] 2xl:text-xl"
             type="text" name="name" id="name" placeholder="Your Name" autoComplete="name" required />
           </label>
           <label htmlFor="email">
             <input
-            className="rounded-full autocomplete bg-transparent border border-gray-600/40 dark:border-indigo-400/80 py-2 px-6 dark:bg-black/10 text-center placeholder:text-center inputsize xsm:text-xs xsm:w-[16rem] xsm:h-[2rem] 2xl:w-[44rem] 2xl:h-[3rem] 2xl:text-xl" 
+            className="rounded-full autocomplete bg-transparent border border-gray-600/40 dark:border-indigo-400/80 py-2 px-6 dark:bg-black/10 text-center placeholder:text-center placeholder:text-black/50 dark:placeholder:text-white/50 inputsize xsm:text-xs xsm:w-[16rem] xsm:h-[2rem] 2xl:w-[44rem] 2xl:h-[3rem] 2xl:text-xl" 
             type="email" name="email" id="email" placeholder="someone@example.com" autoComplete="email" required/>
           </label>
           <label htmlFor="message">           
             <textarea
-            className="roundedlevel resize-none bg-transparent border border-gray-600/40 dark:border-indigo-400/80 py-2 px-6 dark:bg-black/10 text-center placeholder:text-center inputsize xsm:text-xs xsm:w-[16rem] xsm:h-[8rem] 2xl:w-[44rem] 2xl:h-[16rem] 2xl:text-xl overflow-hidden"
+            className="roundedlevel resize-none bg-transparent border border-gray-600/40 dark:border-indigo-400/80 py-2 px-6 dark:bg-black/10 text-center placeholder:text-center placeholder:text-black/50 dark:placeholder:text-white/50 inputsize xsm:text-xs xsm:w-[16rem] xsm:h-[8rem] 2xl:w-[44rem] 2xl:h-[16rem] 2xl:text-xl overflow-hidden"
             rows={8} cols={80} 
             id="message" 
             name="message" 
@@ -77,12 +75,11 @@ export default function MobileContact() {
             <h2 className="xsm:hidden 2xl:inline font-semibold text-xl">
             SEND
             </h2>
-            <Image
-              src={send}
-              alt="Send"
-              width={40}
-              height={40}
-            />
+            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-send xsm:h-[2rem] p-1" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M10 14l11 -11"></path>
+              <path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5"></path>
+            </svg>
           </button>
         </form>
         </div>

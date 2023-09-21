@@ -51,8 +51,8 @@ body {
 }
 
 .line {
+  transition: stroke .4s ease;
   @apply stroke-[#212427] dark:stroke-[#818cf8];
-  transition: all .2s ease;
 }
 
 .button-one[aria-expanded="true"] .top{
@@ -80,13 +80,19 @@ body {
 }
 
 .glow {
-  transition: filter 0.2s ease;
+  transition: filter .4s ease;
 }
 
 .glow:hover {
   @apply drop-shadow-[0px_0px_10px_rgb(78,255,158)] dark:drop-shadow-[0px_0px_10px_rgb(230,37,255)];
 }
 
-.toaster {
-  @apply bg-white dark:bg-[#212427];
+.svgStroke{
+  transition: stroke .4s ease;
+  @apply stroke-[#212427] dark:stroke-white;
+}
+
+.svgStrokeDiff{
+  transition: stroke .1s ease;
+  @apply stroke-[#212427] dark:stroke-white;
 }

@@ -7,10 +7,10 @@
 <ellipse cx="1312.16" cy="49.6101" rx="79.0329" ry="201.501" transform="rotate(-71.5097 1312.16 49.6101)" fill="#D04AFF" fill-opacity="0.8"/>
 </g>
 <g filter="url(#filter2_f_338_310)">
-<ellipse cx="145.505" cy="58.1896" rx="145.505" ry="58.1896" transform="matrix(0.746547 -0.665332 0.653511 0.756917 1460 897.911)" fill="#00CEDB" fill-opacity="0.8"/>
+<ellipse cx="145.505" cy="58.1896" rx="145.505" ry="58.1896" transform="matrix(0.746547 -0.665332 0.653511 0.756917 1460 897.911)" fill="#00CEDB" fill-opacity="0.3"/>
 </g>
 <g filter="url(#filter3_f_338_310)">
-<ellipse cx="132.784" cy="90.8709" rx="132.784" ry="90.8709" transform="matrix(-0.813583 0.581448 -0.598087 -0.801431 1949.73 715.654)" fill="#0094FF"/>
+<ellipse cx="132.784" cy="90.8709" rx="132.784" ry="90.8709" transform="matrix(-0.813583 0.581448 -0.598087 -0.801431 1949.73 715.654)" fill="#0094FF" />
 </g>
 <g filter="url(#filter4_f_338_310)">
 <ellipse cx="154.204" cy="256.894" rx="154.204" ry="256.894" transform="matrix(0.832222 -0.554443 0.362769 0.931879 1018.8 1867.62)" fill="#00FF85" fill-opacity="0.4"/>
