@@ -4,15 +4,22 @@ import LightSwitch from './light-switch';
 import Reveal from './reveal';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function MobileHeader() {
   const navLinks = ["HOME", "ABOUT", "PROJECTS", "CONTACT"];
-  const tabs = ["0", "1", "2", "3"];
   const [isActive, setIsActive] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+        const ismobile = window.innerWidth < 1024;
+        if (ismobile !== isMobile) setIsMobile(ismobile);
+    }, false);
+}, [isMobile]);
 
   return (
-      <header className='sticky top-0 z-10 inset-x-0 flex flex-row items-center justify-center xsm:w-full py-4 2xl:py-[4rem]'>
+      <header className={`sticky top-0 z-10 inset-x-0 flex flex-row items-center justify-center xsm:w-full py-4 2xl:py-[4rem] ${isMobile ? "anima" : ""}`}>
           <Link
           href="#homeSection"
           scroll={true}>
