@@ -51,22 +51,22 @@ body {
 }
 
 .line {
-  transition: stroke .4s ease;
+  transition: all .2s ease;
   @apply stroke-[#212427] dark:stroke-[#818cf8];
 }
 
-.button-one[aria-expanded="true"] .top{
+.buttonOne[aria-expanded="true"] .top{
   transform-origin: 4px 9px;
   rotate: 45deg;
 }
 
-.button-one[aria-expanded="true"] .middle{
+.buttonOne[aria-expanded="true"] .middle{
   transform-origin: 12px 12px;
   rotate: 45deg;
   opacity: 0;
 }
 
-.button-one[aria-expanded="true"] .bottom{
+.buttonOne[aria-expanded="true"] .bottom{
   transform-origin: 5px 16px;
   rotate: -45deg;
 }

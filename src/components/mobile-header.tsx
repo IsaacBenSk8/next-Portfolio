@@ -39,7 +39,7 @@ export default function MobileHeader() {
           </Reveal>
           <div className='flex flex-row xsm:ml-[4rem] w-fit 2xl:m-0'>
             <LightSwitch />
-              <button onClick={() => {setIsActive(!isActive)}} className="xl:hidden button-one relative ml-4" aria-label={isActive ? 'Close menu' : 'Open menu'} aria-controls="primary-navigation" aria-expanded={isActive ? "true" : "false"}>
+              <button onClick={() => {setIsActive(!isActive)}} className="xl:hidden buttonOne relative ml-4" aria-label={isActive ? 'Close menu' : 'Open menu'} aria-controls="primary-navigation" aria-expanded={isActive ? "true" : "false"}>
                 <Reveal className="">
                   <svg xmlns="http://www.w3.org/2000/svg" className="relative z-10" viewBox="0 0 24 24" width={24}>
                     <line className="line top" x1="2" x2="22" y1="6" y2="6" strokeWidth={3} strokeLinecap="round" strokeDasharray={20} strokeDashoffset={0}>
