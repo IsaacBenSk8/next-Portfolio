@@ -9,14 +9,22 @@ import { useEffect, useState } from 'react';
 export default function MobileHeader() {
   const navLinks = ["HOME", "ABOUT", "PROJECTS", "CONTACT"];
   const [isActive, setIsActive] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("resize", () => {
-        const ismobile = window.innerWidth < 1024;
-        if (ismobile !== isMobile) setIsMobile(ismobile);
-    }, false);
-}, [isMobile]);
+    const mediaQuery = window.matchMedia('(max-width: 1024px)');
+    setIsMobile(mediaQuery.matches);
+
+    const handleResize = () => {
+      setIsMobile(mediaQuery.matches);
+    };
+
+    mediaQuery.addListener(handleResize);
+
+    return () => {
+      mediaQuery.removeListener(handleResize);
+    };
+  }, []);
 
   return (
       <header className={`sticky top-0 z-10 inset-x-0 flex flex-row items-center justify-center xsm:w-full py-4 2xl:py-[4rem] ${isMobile ? "anima" : ""}`}>
